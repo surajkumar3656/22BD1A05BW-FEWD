@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | MyShop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <style>
+    .gallery-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container-fluid">
+      <a href="home.html" class="navbar-brand fw-bold text-primary">MyShop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="aboutUs.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="contactUs.html" class="nav-link">Contact Us</a></li>
+          <li class="nav-item"><a href="partners.html" class="nav-link">Partners</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        </ul>
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Gallery Content -->
+  <div class="container my-5 flex-grow-1">
+    <h1 class="text-center text-primary mb-4">Our Gallery</h1>
+    <div class="row g-4">
+      <!-- Image Cards -->
+      <!-- Repeatable card pattern -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60" class="gallery-img" alt="Product 1">
+        <p class="text-center mt-2">Product 1</p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <img src="https://plus.unsplash.com/premium_photo-1679913792906-13ccc5c84d44?w=500&auto=format&fit=crop&q=60" class="gallery-img" alt="Product 2">
+        <p class="text-center mt-2">Product 2</p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&auto=format&fit=crop&q=60" class="gallery-img" alt="Product 3">
+        <p class="text-center mt-2">Product 3</p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60" class="gallery-img" alt="Product 4">
+        <p class="text-center mt-2">Product 4</p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500&auto=format&fit=crop&q=60" class="gallery-img" alt="Product 5">
+        <p class="text-center mt-2">Product 5</p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&auto=format&fit=crop&q=60" class="gallery-img" alt="Product 6">
+        <p class="text-center mt-2">Product 6</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content shadow">
+        <div class="modal-header">
+          <h5 class="modal-title">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3 mt-auto">
+    <p class="mb-0">&copy; 2025 <strong>MyShop</strong>. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
